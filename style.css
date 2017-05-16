@@ -535,7 +535,7 @@ h2
 	max-width: 232px;
 }
 .img-responsive	{
-	height: auto;
+	height: 100%;
 	width: 100%;
 }
 footer p {
@@ -571,7 +571,21 @@ p.address {
 		margin-left: 10px;
 	}
 }
-
+@media screen and (max-width: 1063px) and (min-width: 845px) { 
+	.portfolio [class*="col-"] {
+		height: 260px;
+	}
+}
+@media screen and (max-width: 844px) and (min-width: 721px) { 
+	.portfolio [class*="col-"] {
+		height: 230px;
+	}
+}
+@media screen and (max-width: 547px) and (min-width: 380px) { 
+	.portfolio [class*="col-"] {
+		height: 220px;
+	}
+}
 @media (max-width: 1023px) { 
 	header {
 		height: auto;
@@ -683,7 +697,9 @@ p.address {
 	}
 }
 @media (max-width: 360px) {
-	
+	.portfolio [class*="col-"] {
+		height: 200px;
+	}
 	.brands .col-3 {
 		display: block;
 		width: 100%;
